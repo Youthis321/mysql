@@ -1,0 +1,13 @@
+SELECT
+    NOPEMAIN,
+    CASE
+        JENIS_KELAMIN
+        WHEN 'P' THEN 'PEREMPUAN'
+        ELSE 'LAKI-LAKI'
+    END AS JENIS_KELAMIN,
+    NAMA,
+    BERGABUNG
+FROM
+    pemain
+WHERE
+    BERGABUNG >= 2000;
